@@ -3,5 +3,22 @@
 {% block title %}Contact{% endblock %}
 
 {% block body %}
-
+    <section>
+        <h1>“Ne plus lire depuis longtemps, c'est comme perdre un ami important.”</h1>
+        <div class="contact-titre">
+            <h2>Contactez-nous</h2>
+            <p>Avez-vous des questions ou des suggestions ? N'hésitez pas à nous contacter !</p>
+        </div>
+        <form action="" method="POST">
+            <label for="nom">Nom :</label>
+            <input type="nom" name="nom" id="nom">
+            <label for="prenom">Prénom :</label>
+            <input type="prenom" name="prenom" id="prenom">
+            <label for="email">Email :</label>
+            <input type="email" name="email" id="email">
+            <label for="message">Message :</label>
+            <textarea name="message" id="message"></textarea>
+            <input type="submit" class="btn-contact" value="Envoyer">
+        </form>
+    </section>
 {% endblock %}

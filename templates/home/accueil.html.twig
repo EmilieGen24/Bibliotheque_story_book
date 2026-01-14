@@ -3,5 +3,27 @@
 {% block title %}Accueil{% endblock %}
 
 {% block body %}
+    <section>
+        <h1>« Les pages d'un livre sont comme un flocon de neige : chaque mot est une part de magie qui fond dans le coeur du lecteur. »</h1>
+        <form action="" method="POST">
+            <label for="nom">Nom :</label>
+            <input type="nom" name="nom" id="nom">
+            <label for="prenom">Prénom :</label>
+            <input type="prenom" name="prenom" id="prenom">
+            <label for="email">Email :</label>
+            <input type="email" name="email" id="email">
+            <label for="genre">Cochez le type de genre :</label>
+            <input type="checkbox" name="genre" id="genre">
+            <label for="choix-sujet">Sélectionnez un livre :</label>
+            <select name="choose-sujet" id="choix-sujet">
+                <option value="harrypotter">Harry Potter</option>
+                <option value="femmedemenage">La femme de menage</option>
+                <option value="onepiece">One Piece</option>
+            </select>
+            <label for="message">Message :</label>
+            <textarea name="message" id="message"></textarea>
+            <input type="submit" class="btn-contact" value="Envoyer">
+        </form>
+    </section>
 
 {% endblock %}

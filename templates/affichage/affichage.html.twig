@@ -3,5 +3,28 @@
 {% block title %}{% endblock %}
 
 {% block body %}
+    <section>
+        <h1>“Le monde est un livre, et ceux qui ne voyagent pas n'en lisent qu'une page.”</h1>
+    </section>
+    <section>
+        <h2>Nos Livres</h2>
+        <div class="card">
+            <divclass="card-content">
+                <div class="card-img">
+                    <img src="{{asset('assets/img/Onepiece.jpg')}}" alt="Couverture du livre">
+                </div>
+            </div>
+            <divclass="card-content">
+                <div class="card-img">
+                    <img src="{{asset('assets/img/HarryPotter.jpg')}}" alt="Couverture du livre">
+                </div>
+            </div>
+            <divclass="card-content">
+                <div class="card-img">
+                    <img src="{{asset('assets/img/FemmeMenage.jpg')}}" alt="Couverture du livre">
+                </div>
+            </div>
+        </div>
+    </section>
 
 {% endblock %}

@@ -9,14 +9,33 @@
     </head>
     <body>
         <header>
-            <nav>
+            <nav class="container">
+                <div class="logo-footer">
+                    <img src="{{ asset('assets/img/Logo.png')}}" alt="Image du logo">
+                </div>
                 <ul>
-                    <li>Accueil</li>
-                    <li>Les Livres</li>
-                    <li>Contact</li>
+                    <li><a href="{{ path("accueil") }}">Accueil</a></li>
+                    <li><a href="{{ path("affichage") }}">Les Livres</a></li>
+                    <li><a href="{{ path("contact") }}">Contact</a></li>
                 </ul>
             </nav>
         </header>
         {% block body %}{% endblock %}
+        <footer>
+            <section class="container">
+                <div class="footer-logo">
+                    <img src="{{ asset('assets/img/Logo.png')}}" alt="Image du logo">
+                </div>
+                <div class="footer-content">
+                    <p>Nous sommes ici pour répondre à vos questions.</p>
+                    <p>info@story-book.fr</p>
+                    <p>01 23 45 67 89</p>
+                    <a href="{{ path("contact") }}">Formulaire de contact</a>
+                    <div class="copy">
+                        <p>c 2025 Story Book. Tous droits réservés.</p>
+                    </div>
+                </div>
+            </section>
+        </footer>
     </body>
 </html>
